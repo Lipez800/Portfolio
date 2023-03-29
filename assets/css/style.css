@@ -997,13 +997,6 @@ section {
   position: relative;
 }
 
-@media (max-width: 767px) {
-  .iframe-container {
-    height: 100%;
-    padding-bottom: 75%;
-  }
-}
-
 .iframe-container iframe {
   border: 0;
   height: 100%;
@@ -1168,15 +1161,45 @@ xpopup
 @media only screen and (min-width: 1170px) {
   .cd-popup-container {
     margin: 8em auto;
+    margin-left: 13%;
+  }
+  .cd-popup {
+    margin-left: 13%;
+  }
+  .iframe-container {
+    height: 100%;
+    padding-bottom: 1%;
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   .cd-popup-container {
-    width: 100%;
-    height: auto;
-    max-width: none;
-    border-radius: 0;
-    margin: 2em auto;
+    margin: 6em auto;
+    margin-left: 13%;
+  }
+  .cd-popup {
+    margin-left: 0%;
+  }
+  .iframe-container {
+    height: 100%;
+    padding-bottom: 1%;
   }
 }
+
+@media only screen and (max-width: 931px) {
+  .cd-popup-container {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .iframe-container {
+    height: 100%;
+    padding-bottom: 1%;
+  }
+}
+
+/* -------------------------------- 
+
+Responsividade
+
+-------------------------------- */
